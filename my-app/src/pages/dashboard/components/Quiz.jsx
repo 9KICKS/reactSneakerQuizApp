@@ -5,7 +5,7 @@ function Quiz() {
     const sneakerQuestion = [
         {
             id: 1,
-            question: "The Big Red Boots were made by a art collective known as?",
+            question: "The Big Red Boots were made by an art collective known as?",
             image: require("../../../assets/images/MSCHF Big Red Boot.jpg"),
             options: [
                 { answerText: "Concepts", isCorrect: false },
