@@ -1,12 +1,17 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../src/pages/dashboard/components/Home"
 import Quiz from "./pages/dashboard/components/Quiz";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Quiz />
+      <Router>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/quiz" element={<Quiz />} />
+          </Routes>
+      </Router>
     </div>
   );
 }
