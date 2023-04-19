@@ -60,6 +60,24 @@
 }
 
 .score-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.restart-quiz {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.home-page-button {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-top: 10px;
 }
