@@ -132,7 +132,6 @@ function Quiz() {
         if (isCorrect) {
             setScore(score + 1);
         }
-
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < sneakerQuestion.length) {
             setCurrentQuestion(nextQuestion);
@@ -141,11 +140,19 @@ function Quiz() {
         }
     };
 
+    const handleRestartQuizButtonClick = () => {
+        setCurrentQuestion(0);
+        setShowScore(false);
+        setScore(0);
+    };
+
     return (
         <div className="quiz-page">
             {showScore ? (
                 <div className="score-section">
                     You scored {score} out of {sneakerQuestion.length}
+                    <button className="restart-quiz" onClick={handleRestartQuizButtonClick}>Restart Quiz</button>
+                    <button className="home-page-button" onClick={() => window.location.href = "/"}>Home</button>
                 </div>
             ) : (
                 <>
